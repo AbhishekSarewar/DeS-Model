@@ -1,0 +1,47 @@
+
+ ############## Rules for Optimization Python Code ################ 
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] > 0.046) and (row['Lime_tap'] <= 2927.5) and (row['S_chem_first'] <= 0.027):
+	row['AL_mat'] = -0.0324 * row['final_O2_ppm'] + 0.7724 * row['LM_Start_Wt_lf'] + 0.0168 * row['1st_Probe_temp_lf'] + 1.231 * row['Al_Bar_lf'] + 0.0402 * row['Lime_tap'] + -1515.8216 * row['AL_chem_first'] + 1878.593 * row['S_chem_first']
+	row['node'] = 1
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] <= 0.046) and (row['S_chem_first'] > 0.02) and (row['final_O2_ppm'] > 980.5):
+	row['AL_mat'] = -0.0825 * row['final_O2_ppm'] + 0.8239 * row['LM_Start_Wt_lf'] + 0.0801 * row['1st_Probe_temp_lf'] + 2.2775 * row['Al_Bar_lf'] + -0.0011 * row['Lime_tap'] + -1947.7474 * row['AL_chem_first'] + 2673.3038 * row['S_chem_first']
+	row['node'] = 2
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] <= 0.032) and (row['S_chem_first'] > 0.027) and (row['S_chem_first'] <= 0.035):
+	row['AL_mat'] = 0.0438 * row['final_O2_ppm'] + 0.6855 * row['LM_Start_Wt_lf'] + 0.3155 * row['1st_Probe_temp_lf'] + -47.4434 * row['Al_Bar_lf'] + 0.0242 * row['Lime_tap'] + 1995.5641 * row['AL_chem_first'] + 2986.0422 * row['S_chem_first']
+	row['node'] = 3
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] <= 0.046) and (row['S_chem_first'] <= 0.02) and (row['Lime_tap'] <= 3088.5):
+	row['AL_mat'] = 0.0555 * row['final_O2_ppm'] + 0.3062 * row['LM_Start_Wt_lf'] + -0.0246 * row['1st_Probe_temp_lf'] + -0.3171 * row['Al_Bar_lf'] + 0.0154 * row['Lime_tap'] + 746.5366 * row['AL_chem_first'] + 3383.4895 * row['S_chem_first']
+	row['node'] = 4
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] <= 0.032) and (row['S_chem_first'] <= 0.027) and (row['final_O2_ppm'] <= 1144.5):
+	row['AL_mat'] = 0.0382 * row['final_O2_ppm'] + 0.3324 * row['LM_Start_Wt_lf'] + 0.0252 * row['1st_Probe_temp_lf'] + -10.1441 * row['Al_Bar_lf'] + 0.0239 * row['Lime_tap'] + 920.4385 * row['AL_chem_first'] + 896.9098 * row['S_chem_first']
+	row['node'] = 5
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] <= 0.032) and (row['S_chem_first'] > 0.027) and (row['S_chem_first'] > 0.035):
+	row['AL_mat'] = 0.0176 * row['final_O2_ppm'] + 0.1702 * row['LM_Start_Wt_lf'] + -0.2343 * row['1st_Probe_temp_lf'] + 22.0835 * row['Al_Bar_lf'] + 0.004 * row['Lime_tap'] + 839.7014 * row['AL_chem_first'] + 1598.1017 * row['S_chem_first']
+	row['node'] = 6
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] > 0.046) and (row['Lime_tap'] <= 2927.5) and (row['S_chem_first'] > 0.027):
+	row['AL_mat'] = -0.0547 * row['final_O2_ppm'] + 1.4363 * row['LM_Start_Wt_lf'] + -0.089 * row['1st_Probe_temp_lf'] + 2.528 * row['Al_Bar_lf'] + 0.0229 * row['Lime_tap'] + -1716.6099 * row['AL_chem_first'] + 4898.4014 * row['S_chem_first']
+	row['node'] = 7
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] > 0.032) and (row['Lime_tap'] > 995.5) and (row['S_chem_first'] <= 0.029):
+	row['AL_mat'] = 0.0525 * row['final_O2_ppm'] + -0.5727 * row['LM_Start_Wt_lf'] + -0.5461 * row['1st_Probe_temp_lf'] + 69.4802 * row['Al_Bar_lf'] + 0.0088 * row['Lime_tap'] + 455.8244 * row['AL_chem_first'] + -366.027 * row['S_chem_first']
+	row['node'] = 8
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] <= 0.046) and (row['S_chem_first'] > 0.02) and (row['final_O2_ppm'] <= 980.5):
+	row['AL_mat'] = -0.2894 * row['final_O2_ppm'] + 1.25 * row['LM_Start_Wt_lf'] + 0.0502 * row['1st_Probe_temp_lf'] + -0.0683 * row['Al_Bar_lf'] + -0.0091 * row['Lime_tap'] + 3294.5118 * row['AL_chem_first'] + 3035.8515 * row['S_chem_first']
+	row['node'] = 9
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] <= 0.032) and (row['S_chem_first'] <= 0.027) and (row['final_O2_ppm'] > 1144.5):
+	row['AL_mat'] = -0.0417 * row['final_O2_ppm'] + -0.1288 * row['LM_Start_Wt_lf'] + 0.9894 * row['1st_Probe_temp_lf'] + -103.7983 * row['Al_Bar_lf'] + 0.0911 * row['Lime_tap'] + 1693.7519 * row['AL_chem_first'] + 4085.8512 * row['S_chem_first']
+	row['node'] = 10
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] > 0.032) and (row['Lime_tap'] <= 995.5) and (row['LM_Start_Wt_lf'] > 185.5):
+	row['AL_mat'] = -0.0592 * row['final_O2_ppm'] + 0.5833 * row['LM_Start_Wt_lf'] + 1.1643 * row['1st_Probe_temp_lf'] + -119.9933 * row['Al_Bar_lf'] + 0.0059 * row['Lime_tap'] + 406.2502 * row['AL_chem_first'] + 453.8333 * row['S_chem_first']
+	row['node'] = 11
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] > 0.032) and (row['Lime_tap'] > 995.5) and (row['S_chem_first'] > 0.029):
+	row['AL_mat'] = -0.95 * row['final_O2_ppm'] + 0.4265 * row['LM_Start_Wt_lf'] + -2.3793 * row['1st_Probe_temp_lf'] + 449.1525 * row['Al_Bar_lf'] + -0.2327 * row['Lime_tap'] + 4141.8124 * row['AL_chem_first'] + -51050.0 * row['S_chem_first']
+	row['node'] = 12
+elif (row['Al_Bar_lf'] <= 15.026) and (row['AL_chem_first'] > 0.032) and (row['Lime_tap'] <= 995.5) and (row['LM_Start_Wt_lf'] <= 185.5):
+	row['AL_mat'] = 0.1307 * row['final_O2_ppm'] + 5.0999 * row['LM_Start_Wt_lf'] + 0.5949 * row['1st_Probe_temp_lf'] + -133.0633 * row['Al_Bar_lf'] + -0.1308 * row['Lime_tap'] + 4123.9197 * row['AL_chem_first'] + 2242.8091 * row['S_chem_first']
+	row['node'] = 13
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] > 0.046) and (row['AL_chem_first'] > 0.046) and (row['Lime_tap'] > 2927.5):
+	row['AL_mat'] = -0.891 * row['final_O2_ppm'] + -2.3266 * row['LM_Start_Wt_lf'] + 1.5258 * row['1st_Probe_temp_lf'] + 13.1046 * row['Al_Bar_lf'] + -0.2811 * row['Lime_tap'] + 603.2872 * row['AL_chem_first'] + -5683.1937 * row['S_chem_first']
+	row['node'] = 14
+elif (row['Al_Bar_lf'] > 15.026) and (row['AL_chem_first'] <= 0.046) and (row['S_chem_first'] <= 0.02) and (row['Lime_tap'] > 3088.5):
+	row['AL_mat'] = 0.5715 * row['final_O2_ppm'] + 0.4728 * row['LM_Start_Wt_lf'] + 0.2037 * row['1st_Probe_temp_lf'] + 8.4861 * row['Al_Bar_lf'] + -0.1905 * row['Lime_tap'] + -10340.0 * row['AL_chem_first'] + -9121.9165 * row['S_chem_first']
+	row['node'] = 15
