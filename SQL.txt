@@ -1,0 +1,43 @@
+	
+select * from grade_mapping
+INSERT INTO grade_mapping (GRADE, GRADE_TYPE) VALUES ('JDHSG52AHZ', 'VAG');
+
+
+select * from output_table where convert(DATE, msg_time_stamp) >='2022-03-29 00:00:00' order by MSG_TIME_STAMP desc
+select * from heat_analysis where HEAT_NUMBER='22401478'  order by MSG_TIME_STAMP desc
+select * from lf_heat_data where HEAT_NUMBER ='22401478' order by MSG_TIME_STAMP desc
+
+select * from output_table where SEQ_VALUE>5930 order by MSG_TIME_STAMP desc
+
+select * from output_table where HEAT_NUMBER='22401478' order by MSG_TIME_STAMP desc 
+
+select * from heat_analysis where convert(DATE, msg_time_stamp) >='2022-02-11 00:00:00' order by MSG_TIME_STAMP desc
+select * from lf_heat_data where convert(DATE, msg_time_stamp) >='2022-02-11 00:00:00' order by MSG_TIME_STAMP desc
+select * from grade_mapping where GRADE = 'JDHSG37ALZ'
+
+select * from conarc_tap_mat order by MSG_TIMESTAMP desc
+select * from fa_output_table order by MSG_TIME_STAMP desc
+
+select * from fa_output_table where HEAT_NUMBER='22301236' order by MSG_TIME_STAMP desc
+select * from conarc_tap_mat where HEAT_NUMBER='22301236' order by MSG_TIME_STAMP desc
+select * from heat_analysis where HEAT_NUMBER='22301162' order by MSG_TIME_STAMP desc
+select * from lf_heat_data where HEAT_NUMBER='22301162' order by MSG_TIME_STAMP desc
+select * from output_table where HEAT_NUMBER='22301236' order by MSG_TIME_STAMP desc
+
+select * from grade_constraints where Grade= 'JDHSG52AHZ'
+select * from grade_mapping where Grade= 'JDHSG52AHZ'
+
+
+
+
+select * from Flux_Model.dbo.conarc_flux_data order by MSG_TIME_STAMP desc
+select * from Flux_Model.dbo.flux_output order by MSG_TIME_STAMP desc
+
+select * from Flux_Model.dbo.conarc_flux_data where convert(DATE, msg_time_stamp) >='2022-03-14 00:00:00' and  STATUS_DESCRIPTION='EAF Tapping End' order by MSG_TIME_STAMP desc
+select * from Flux_Model.dbo.flux_output where convert(DATE, msg_time_stamp) >='2022-03-14 00:00:00' and  STATUS_DESCRIPTION!='P Predictions' order by MSG_TIME_STAMP desc
+
+select * from Flux_Model.dbo.conarc_flux_data where HEAT_NUMBER='22201478' order by MSG_TIME_STAMP desc
+select * from Flux_Model.dbo.flux_output where HEAT='22201588' order by MSG_TIME_STAMP desc
+
+select * from Flux_Model.dbo.conarc_flux_data where HEAT_NUMBER='22401744' order by MSG_TIME_STAMP desc
+select * from Flux_Model.dbo.flux_output where HEAT='22401744' order by MSG_TIME_STAMP desc
